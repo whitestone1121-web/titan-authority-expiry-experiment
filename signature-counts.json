@@ -1,18 +1,12 @@
 {
-  "before": {
-    "destination_receipt_signatures": 15,
-    "observer_envelope_signatures": 27,
-    "journal_record_signatures": 45,
-    "fresh_role_public_keys": 130,
-    "independent_witness_count": "NOT_ESTABLISHED_SAME_HOST_OPERATOR_KEYS",
-    "direct_signature_checks": 87
+  "distinct_signed_envelopes_by_role": {
+    "approval": 50,
+    "gateway": 31,
+    "journal": 87,
+    "destination": 29,
+    "observer": 54,
+    "operator": 52
   },
-  "after": {
-    "destination_receipt_signatures": 14,
-    "observer_envelope_signatures": 27,
-    "journal_record_signatures": 42,
-    "fresh_role_public_keys": 130,
-    "independent_witness_count": "NOT_ESTABLISHED_SAME_HOST_OPERATOR_KEYS",
-    "direct_signature_checks": 83
-  }
+  "counts_are_inventory_not_pass_criteria": true,
+  "issuer_key_present_but_native_grant_MAC_not_publicly_recomputed": true
 }

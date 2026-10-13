@@ -1,0 +1,134 @@
+{
+  "schema": "titan.signed_approval_negative_controls.v2",
+  "positive_package_verified": true,
+  "controls": [
+    {
+      "control": "approval_expiry",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "final public record commitment differs",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "first_consumption_at",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "final public record commitment differs",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "native_decision",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "final public record commitment differs",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "grant_expiry",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "final public record commitment differs",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "operation_id",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "final public record commitment differs",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "parameters",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "final public record commitment differs",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "grant_digest",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "final public record commitment differs",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "missing_approval",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "final public record commitment differs",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "missing_permit",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "final public record commitment differs",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "truncated_journal",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "final public record commitment differs",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "wrong_role_key",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "role key reused across capture cases",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "batch_relabel",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "duplicate or swapped case/batch",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "case_relabel",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "duplicate or swapped case/batch",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "timing_violation_relabelled_gap",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "final public record commitment differs",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "whole_case_omission",
+      "rejected": true,
+      "exception": "ValueError",
+      "reason": "outer case inventory differs from signed context",
+      "outer_manifest_repinned": true
+    },
+    {
+      "control": "optimized_python",
+      "rejected": true,
+      "returncode": 1
+    }
+  ],
+  "private_signing_keys_used": false,
+  "expected_result_totals_used": false,
+  "computed_totals": {
+    "before": {
+      "effects": 15,
+      "signed_approvals": 25,
+      "signed_late_consumption_decisions": 1,
+      "expiry_violations": 1,
+      "legacy_unqualified_effects": 1
+    },
+    "after": {
+      "effects": 14,
+      "signed_approvals": 25,
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 1
+    }
+  }
+}

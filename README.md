@@ -1,50 +1,33 @@
-# Titan authority experiment — public evidence verification candidate
+# Titan authority-expiry experiment — fresh signed approval evidence v0.2.0
 
-This source-free export lets a reviewer verify archived Ed25519 evidence and independently recalculate the supplied 26-case before/after results. It contains no Titan implementation, experiment executable, private key, database, model, or private repository history. Full implementation reproduction is unavailable under the current source-release restriction.
+This source-free package contains a **new, separately captured** 26-case baseline and 26-case repaired comparison. It closes the v0.1.0 timing-authentication gap by signing the actual native approval decision, full grant and observed durable first-consumption row **before the permit/effect**, then linking that approval to the signed destination receipt and journal. The v0.1.0 release is unchanged; its records were not retrospectively signed.
 
-## Run offline
+Fresh offline verification computes one expired-consumption effect before the repair and zero after. The deliberately unsafe legacy configuration remains unqualified and produces one effect in each batch. These are bounded experimental results, not production qualification or training data.
 
-Requires Python 3.12 and cryptography 41.0.7 (actual clean verification provider will be recorded in independent-review.json). Dependency installation may require network access; verification itself requires none. The supplied verifier is inspectable utility code, not Titan source. Do not use Python -O.
+## Verify
+
+Python 3.12 and `cryptography==41.0.7` were used for the actual clean verification. Install that dependency in an environment you control. No Titan code, credentials, network access, GPU or model weights are needed by either command.
 
 ```sh
-python3 -I verify_public_evidence.py --root . --manifest-sha256 0e1c927eb7214e36fe9b6883a5ca64a1044e5febb7c07e27f58dfc54eeb8c201
+python3 -I -B verify_signed_approval_evidence.py . --manifest-sha256 4167c98c403e728deb97258e583832780f5b51f6cb7ff0207768ef9bd94eb630
+python3 -I -B negative_signed_approval_controls.py . --manifest-sha256 4167c98c403e728deb97258e583832780f5b51f6cb7ff0207768ef9bd94eb630 --verifier-sha256 69da325ed240dc2812440030e0dc4488b8309acf326ab5d421d6a3771a9f8506
 ```
 
-Obtain that manifest digest and the final package digest through an authenticated operator channel independent of this download. The manifest pins every case file and every role public key. It is not an operator-signed release manifest. A replacement bundle with a replacement digest does not authenticate itself. No publisher private key is created by the collector or verifier.
+Or run `make verify-archive` and `make verify-negative-controls`. Results are calculated from authenticated records, with no assertions requiring expected headline totals. The declared **case inventory** is signed inside every context; it is a completeness requirement, not a hardcoded success/violation count. All 16 public tamper controls were executed successfully, including edits with recomputed outer hashes, timing relabeling and whole-case omission.
 
-## Results and identities
+Authenticate the release/archive and manifest hash through a separately trusted channel before trusting these bundled public keys or executing these utilities. A replacement archive containing new attacker-controlled keys and a new trust pin is a different trust root.
 
-The same frozen 26-case experiment file was used for both archived batches. Its SHA256 is d3cb41f23befb95067edabc9e4e9090fa7002bc048a73c55bee20f8ebdae4ec1; local control commit e9395dd3a3329ff79037acfd40bd86cebd5e18fd. Baseline implementation commit87c1f9f0bdfac988650c543eb05b360535928884/native ledger9fcf4df9c3e39fd76924ff32cfbca781335612c7b1f834af25ef454622e5d439. The repaired trial tested an UNCOMMITTED snapshot with ledger96af66cf9710ba6947469a04981850c8080421316ab00c66e1b1a44daf2f411f; repair full/source qualification remains pending. Subsequent formatting and integration are not retroactively called this trial's tested commit.
+## Evidence and limits
 
-| Recomputed metric | Before | After |
-|---|---:|---:|
-| Destination acceptances | 15 | 14 |
-| Unauthorized expired effects | 1 | 0 |
-| Unqualified legacy acceptance | 1 | 1 |
-| Duplicate / false completion / unsafe recovery | 0 / 0 / 0 | 0 / 0 / 0 |
-| UNKNOWN | 13 | 14 |
-| Valid normal effects | 1 | 1 |
+- [Signed linkage specification](SIGNED_LINKAGE.md): exact signatures and hash links from grant to approval to effect.
+- [Fresh capture protocol](CAPTURE_PROTOCOL.md): declared cases, capture changes and actual source identities.
+- [Computed results](RESULTS.md), `recomputed-results.json`, and `negative-controls.json`.
+- `before/` and `after/`: 52 original public-safe records, preserved byte-for-byte from the fresh capture; each contains seven public role keys and evidence fields plus a signed final inventory. Approval, permit and journal chains can be empty for denied or pre-entry cases; the signed inventory authenticates those empty counts.
 
-A control that detects the vulnerability is a successful reproduction of a defect, not a safe implementation verdict. The repair bounds first nonce consumption after waiting for the SQLite write lock. It does not promise an absolute physical COMMIT, dispatch, or remote transport deadline. Real wall clocks and a held SQLite writer synchronized the expiry interleaving; no production clock or TTL was changed. The earlier120-second Alpaca fixture issue and Claude#3482 chat-entry grants are different mechanisms.
+The native grant uses an HMAC. Its key is not published. Public Ed25519 approval signatures bind the full grant and attest the native decision and observed SQL row; an outsider cannot independently recompute the native HMAC. Signing establishes authentic role statements under the pinned keys, not independent wall-clock truth or a physical SQLite COMMIT timestamp.
 
-## What signatures mean
+All roles ran on one host under the same OS UID, with separate signing configurations/processes. This does not establish independent OS custody, resistance to a fully compromised host, production ToolHub integration, canonical observer runtime qualification, or production delivery. Build hashes are signed capture claims, not an independent execution attestation.
 
-Payloads use Ed25519 over UTF-8 Python sorted JSON with separators(',',':'), ensure_ascii=True and allow_nan=False. Signatures and raw32-byte public keys use base64. This is the actual experiment serialization, not RFC8785. The manifest gives SHA256 fingerprints of the raw public keys, separately for issuer, gateway, destination, observer and journal. Keys were freshly generated per case by one experiment operator; role names and many signatures do not establish independent witnesses.
+Titan implementation, private harness, private configuration, signing keys, databases and private Git history are not released. Outsiders can authenticate and recalculate the evidence and run verifier tamper controls; they cannot rerun the private experiment implementation from this package. `make reproduce` explicitly fails for that reason.
 
-The original83 checks for the repaired run are14destination receipts+27observer envelopes+42journal records. The verifier additionally checks gateway permits and repeated nested destination receipts, so its reported verification-attempt count differs. See signature-counts.json. Issuer public keys are published, but capability grants use HMAC and cannot be independently authenticated with these public keys; no HMAC secret is released.
-
-## Evidence boundaries and limitations
-
-Destination receipts, observer snapshots, gateway permits and journal chains can be cryptographically checked. Local event timestamps, exported consumed-nonce rows, expected inputs, source identities and worker text are UNSIGNED. Recalculated authority/expiry counters therefore remain conditional on those supplied local inputs; hashes authenticate their archive integrity relative to the externally obtained manifest pin, not their truth. This verifier does not turn unsigned evidence into an operational authority attestation.
-
-The attacked worker ran in bubblewrap user/PID/network namespaces with closed inherited descriptors, read-only Python/library/source mounts and two local Unix API sockets. It received no authority/observer private-key configuration. Trusted roles were separate processes with role-specific key files and dumpability disabled, but all shared host UID1000. The test is a Byzantine worker protocol test, not proof against a fully compromised host. The canonical observer trust registry rejected the same-UID policy. Role separation, key custody and host clocks are not independently attested by this public package.
-
-The destination was a dummy-account local API, message drops simulated partitions, and transport/observer adapters were experimental. Actual ToolHub execution, real GitHub delivery, real customer acceptance and payments were not exercised. Signed source fields still refer to the tested precommit snapshot and are not silently rewritten. A wrong-operation historical receipt is validly signed but rejected semantically. Conflict and entered-but-unresolved operations retain UNKNOWN, with no blind redispatch. One intentionally unsafe default-off legacy configuration remains an unqualified acceptance; it is not hidden.
-
-The package verifies completeness only within its52declared case files and their supplied signed records. It cannot prove absence of unobserved effects, omitted events inside a fabricated source archive, or independently verify implementation bytes not released. No certification, production readiness, training eligibility, or universal security claim is made. Qualified training examples0; weights loaded0; optimizer steps0.
-
-## Publication
-
-Prepared candidate only. Proposed public repository: whitestone1121-web/titan-authority-expiry-experiment. Publication authorization and operator authentication of the release digest are pending. Do not publish Titan source or private history. Existing public repositories signalbrain and receipt-gate-demo were inspected as alternatives; no repository was modified.
-
-Verifier negative controls: `make verify-negative-controls` executes the supplied portable driver, copying only the52casefiles, manifest and verifier into a temporary directory. It never modifies the evidence source.
+**Training eligibility remains false. Qualified training examples and independent training roots remain zero; the original 18 benchmark rows remain quarantined.**

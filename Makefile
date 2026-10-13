@@ -1,9 +1,9 @@
 verify-archive:
-	python3 -I -B verify_public_evidence.py --root . --manifest-sha256 0e1c927eb7214e36fe9b6883a5ca64a1044e5febb7c07e27f58dfc54eeb8c201
-
-reproduce:
-	@echo "Full implementation reproduction unavailable: Titan source is not released."
-	@exit 1
+	python3 -I -B verify_signed_approval_evidence.py . --manifest-sha256 4167c98c403e728deb97258e583832780f5b51f6cb7ff0207768ef9bd94eb630
 
 verify-negative-controls:
-	python3 -I -B negative_controls.py --package-root . --manifest-sha256 0e1c927eb7214e36fe9b6883a5ca64a1044e5febb7c07e27f58dfc54eeb8c201 --verifier-sha256 8f935389d1f7dd30f34ca772beb0fa6ece1821102b6e0e677196b632c5786604
+	python3 -I -B negative_signed_approval_controls.py . --manifest-sha256 4167c98c403e728deb97258e583832780f5b51f6cb7ff0207768ef9bd94eb630 --verifier-sha256 69da325ed240dc2812440030e0dc4488b8309acf326ab5d421d6a3771a9f8506
+
+reproduce:
+	@echo "Full experiment reproduction unavailable: Titan implementation and private harness are not released."
+	@exit 1

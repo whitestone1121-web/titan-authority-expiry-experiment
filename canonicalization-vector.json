@@ -1,8 +1,12 @@
 {
-  "input": {
-    "z": 1,
-    "a": "demo"
+  "value": {
+    "unicode": "\u03c0",
+    "boolean": true,
+    "null": null,
+    "integer": 7,
+    "fraction": 1.25
   },
-  "signed_utf8": "{\"a\":\"demo\",\"z\":1}",
-  "sha256": "8e3e71b88d73c9a62f4f5731d0747faf4f762fe2a8c5beda8d903f42fe3e36a7"
+  "canonical_utf8_text": "{\"boolean\":true,\"fraction\":1.25,\"integer\":7,\"null\":null,\"unicode\":\"\\u03c0\"}",
+  "sha256": "09f435431322b591e512025733ff51c4c06997a2865c347f4113ea8c8e9f1779",
+  "scheme": "Python json.dumps sorted keys, compact separators, ensure_ascii=True, allow_nan=False; notRFC8785"
 }

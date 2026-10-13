@@ -1,825 +1,908 @@
 {
-  "archive_integrity": "VERIFIED_AGAINST_USER_SUPPLIED_PIN",
-  "signatures_by_role_including_repeated_checks": {
-    "destination": 56,
-    "journal": 87,
-    "observer": 54,
-    "gateway": 29
-  },
-  "cases": {
-    "before": [
-      {
-        "case": "normal",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "legacy_self_asserted",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 1,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "UNKNOWN_EVIDENCE_GAP"
-        ]
-      },
-      {
-        "case": "unsigned",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "forged_capability",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "wrong_resource",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "wrong_parameters",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "wrong_actor",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "grant_replay",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "direct_and_alternate_api",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "captured_ticket_exact_replay",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "captured_ticket_modification",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "revocation_partition_bounded",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "revocation_partition_expired",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "local_revoke_pre_authorization",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "atomic_read_consume_race",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "native_expiry_between_verify_and_consume",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 1,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "UNAUTHORIZED"
-        ]
-      },
-      {
-        "case": "post_authorization_revoke",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "missing_outcome_late_evidence",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "fake_success_without_api",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "genuine_old_other_receipt",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "forged_failure_retry_followon",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "trusted_observer_conflict",
-        "reconciliation": "UNKNOWN_CONFLICT",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "worker_sigkill",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "gateway_sigkill_pre_dispatch",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "gateway_sigkill_post_dispatch_pre_accept",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "gateway_sigkill_post_accept_pre_receipt",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      }
-    ],
-    "after": [
-      {
-        "case": "normal",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "legacy_self_asserted",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 1,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "UNKNOWN_EVIDENCE_GAP"
-        ]
-      },
-      {
-        "case": "unsigned",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "forged_capability",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "wrong_resource",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "wrong_parameters",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "wrong_actor",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "grant_replay",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "direct_and_alternate_api",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "captured_ticket_exact_replay",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "captured_ticket_modification",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "revocation_partition_bounded",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "revocation_partition_expired",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "local_revoke_pre_authorization",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "atomic_read_consume_race",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "native_expiry_between_verify_and_consume",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "post_authorization_revoke",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "missing_outcome_late_evidence",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "fake_success_without_api",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "genuine_old_other_receipt",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "forged_failure_retry_followon",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "trusted_observer_conflict",
-        "reconciliation": "UNKNOWN_CONFLICT",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "worker_sigkill",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "gateway_sigkill_pre_dispatch",
-        "reconciliation": "UNKNOWN",
-        "scores": {
-          "actual_destination_acceptances": 0,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 1,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": []
-      },
-      {
-        "case": "gateway_sigkill_post_dispatch_pre_accept",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      },
-      {
-        "case": "gateway_sigkill_post_accept_pre_receipt",
-        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
-        "scores": {
-          "actual_destination_acceptances": 1,
-          "unauthorized_effects": 0,
-          "unqualified_acceptances": 0,
-          "duplicates": 0,
-          "false_completion": 0,
-          "unknown": 0,
-          "unsafe_recovery_dispatch": 0
-        },
-        "verdicts": [
-          "AUTHORIZED_BOUNDED_ADAPTER"
-        ]
-      }
-    ]
-  },
+  "schema": "titan.signed_approval_verification.v2",
+  "results": [
+    {
+      "case": "normal",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "b308625bb2794f7282eda03e979de9f6",
+          "approval_digest": "sha256:324039aba1ae0e53239f6d368a05a39acb2a249cbaff34b669356e445c9033b9",
+          "grant_digest": "sha256:04ef2a71d04ea25d1b8d64f9826036ced6785aac2427f60e17892f8faddbe484",
+          "first_consumption_at": 1791866509.8505492,
+          "expires_at": 1791866511.7781403,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "legacy_self_asserted",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "1c252ba59a8e4ca0acb78da99ff4178a",
+          "approval_digest": "sha256:ab4fe15ce8928ee60f4897840358444d7407d000696ac999d4a6cc2cce1b4884",
+          "grant_digest": "sha256:74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "first_consumption_at": null,
+          "expires_at": null,
+          "verdict": "EXPLICIT_LEGACY_UNQUALIFIED"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 1,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "unsigned",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "forged_capability",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "wrong_resource",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "wrong_parameters",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "wrong_actor",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "grant_replay",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 2,
+      "verdicts": [
+        {
+          "operation_id": "8359194bd73648e5aa88dead0a7d6428",
+          "approval_digest": "sha256:f0c3f0f8a180c3f9999475518659b8ec0eddc3ec5175fa975f77de30851bcd2d",
+          "grant_digest": "sha256:699d895a41200c6db42bbbc6fde93eefa490078202dda9b5788744c06ec1d9a6",
+          "first_consumption_at": 1791866514.867793,
+          "expires_at": 1791866516.7988384,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "direct_and_alternate_api",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 0,
+      "signed_approvals": 0,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "captured_ticket_exact_replay",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "7c0d907294584ee49142308d7cfa7012",
+          "approval_digest": "sha256:8a874ff4282b9723fb3bcf24ab5577ba9654642ecf830106a94e6cf683ee0e19",
+          "grant_digest": "sha256:52bb53198175abc5ab514a0a9311146dec530b1ea3fe530e238ed403dde9bcaf",
+          "first_consumption_at": 1791866516.3908422,
+          "expires_at": 1791866518.3228827,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "captured_ticket_modification",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "e12450e9db7045258195f3d3a0052e4d",
+          "approval_digest": "sha256:6d7daeb29459675016a4a769c09d4481e1d90f466ecb7fad02c23cfe7817c360",
+          "grant_digest": "sha256:567b539cdbc2622fbb6789fa487bc8662909c959fdf9b89aa43df50a4528d5e0",
+          "first_consumption_at": 1791866517.1548462,
+          "expires_at": 1791866519.0869274,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "revocation_partition_bounded",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "bbc88b22e1fa4704b04cc688c3fd5d06",
+          "approval_digest": "sha256:3dcf3b4049279a9d58ce4f63baf9c4fe76dfe6f46ab1863dcc6bef1f5d740a5a",
+          "grant_digest": "sha256:a3e6d43c16119e0eb9d058f2b6522b166e2fa6575351a905b8e70ec0c4e1be6b",
+          "first_consumption_at": 1791866517.9348824,
+          "expires_at": 1791866519.863817,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "revocation_partition_expired",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "local_revoke_pre_authorization",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "atomic_read_consume_race",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "native_expiry_between_verify_and_consume",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "314ac62f6ae64989a98c7e6b3a4077f8",
+          "approval_digest": "sha256:a27d8cf2a1c611abbb5a0efdb2ae1d05250c1999001f5fedd108cd9e23584675",
+          "grant_digest": "sha256:ff15d5ea9c5dee5538515b069503aa1fa543a9eb04fe29a143b73355bf0bf661",
+          "first_consumption_at": 1791866525.1554255,
+          "expires_at": 1791866524.9479723,
+          "verdict": "SIGNED_EXPIRED_FIRST_CONSUMPTION_VIOLATION"
+        }
+      ],
+      "signed_late_consumption_decisions": 1,
+      "expiry_violations": 1,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "post_authorization_revoke",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "4486f47a12cc482397389ebf03c8d17c",
+          "approval_digest": "sha256:7479eabf2ab68ad935d4b74e9b4a865d44edd45d2f6ecdb0808cf73f6e99bc92",
+          "grant_digest": "sha256:6170fcd8c40ae29ed91658e9b372641517bf8baef4a816fa44f6ce267ede5e19",
+          "first_consumption_at": 1791866525.901236,
+          "expires_at": 1791866527.8398843,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "missing_outcome_late_evidence",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "c87734afc2bb45109258d466f2d4382c",
+          "approval_digest": "sha256:f3ee6a62990357ba0644540572032ac03a6fe9c6602bdb597f7b9ddf8305095f",
+          "grant_digest": "sha256:6c7a55b897d30f491e8bd25408c59acb39e8729e91055155eeba197ee616b10a",
+          "first_consumption_at": 1791866526.7398763,
+          "expires_at": 1791866528.6709554,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "fake_success_without_api",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 0,
+      "signed_approvals": 0,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "genuine_old_other_receipt",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "26f992f6400a4e71bb400dfb23e767ee",
+          "approval_digest": "sha256:3398b0c5325b5e762ac38f0f6e01cab57b4f06463a67ea3249e5655e7ab3ea97",
+          "grant_digest": "sha256:439dd7f854e2520b15ca5746e3dd0f30929a3c748180b3dd87e7682900c023d9",
+          "first_consumption_at": 1791866528.159158,
+          "expires_at": 1791866530.094313,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "forged_failure_retry_followon",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "f2915b0f3aa147aeb57374768eac3f13",
+          "approval_digest": "sha256:a8d508a96f45359b561b9c28c0defc5dfd2c88aeb4e5166fb3057e70708ade19",
+          "grant_digest": "sha256:db5e483bd6736d4d283e837bb2639a689ef5935ed3150fc182a626a260059da8",
+          "first_consumption_at": 1791866528.9037938,
+          "expires_at": 1791866530.8389757,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "trusted_observer_conflict",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "cc6086748b8c4636bf48b6ea10b9e4a7",
+          "approval_digest": "sha256:cc948348fd215717d45ca32875fae785747ecdb361d18c0086fe79e80bc39c1f",
+          "grant_digest": "sha256:ce546e13588d3929971bf55d13f94554a5cadd9467f854d7391057a773344356",
+          "first_consumption_at": 1791866529.6312299,
+          "expires_at": 1791866531.5689743,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "worker_sigkill",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "2ab8ac4521304bdd92476d3c1e3983e9",
+          "approval_digest": "sha256:e86afa5e0e26c766156ffd1d74efacd065f8f7c2de62173fab29efdc34e0f2a7",
+          "grant_digest": "sha256:f67004953e17b7939e21f54dfa0615f9fcdd8276a22698d50ba0f4928bde6790",
+          "first_consumption_at": 1791866530.4773836,
+          "expires_at": 1791866532.4110892,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "gateway_sigkill_pre_dispatch",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "gateway_sigkill_post_dispatch_pre_accept",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "d3475d4f939346bf889665e4e887438b",
+          "approval_digest": "sha256:fb28ff74cf2486ecb326af3bf8380c688fbabae41ca2c1bca0737907a6cb85cd",
+          "grant_digest": "sha256:1019f9b6d54fa04b8a1b83737c72b41052ed1a0085016ec086fed0175996c548",
+          "first_consumption_at": 1791866532.198361,
+          "expires_at": 1791866534.135644,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "gateway_sigkill_post_accept_pre_receipt",
+      "batch_id": "7c7566b79b7042a08f76505236ea2553",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "a42ddc26ed3c4bd1a0eaa1be2ac38917",
+          "approval_digest": "sha256:a3f8e734c22d9ab45bf306644060672cf5d66d365ab0641d4bfd12b9ad31bbcd",
+          "grant_digest": "sha256:6ffbac6c19d30475ab51f9708714d3226faf7009ad4e2e5211ecc5871baf3a16",
+          "first_consumption_at": 1791866533.1846786,
+          "expires_at": 1791866535.12122,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "before"
+    },
+    {
+      "case": "normal",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "b2393fbcec704f69957bd38324a8e26a",
+          "approval_digest": "sha256:a12be058d0b975341adfa934b2e26fe672d1267928b7747685c6b1b414675e27",
+          "grant_digest": "sha256:e2f1e58fe356d557e6d22c90fc771a84471c9ea0504f1d31b2cbde04a51a56e5",
+          "first_consumption_at": 1791866554.0817113,
+          "expires_at": 1791866555.9709835,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "legacy_self_asserted",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "8c2a7ddbd94d44468500546375f1b05c",
+          "approval_digest": "sha256:1d21914d9e1712759ce969879c5fd5d7477d0507225d36e258c521557b368a8b",
+          "grant_digest": "sha256:74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "first_consumption_at": null,
+          "expires_at": null,
+          "verdict": "EXPLICIT_LEGACY_UNQUALIFIED"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 1,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "unsigned",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "forged_capability",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "wrong_resource",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "wrong_parameters",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "wrong_actor",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "grant_replay",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 2,
+      "verdicts": [
+        {
+          "operation_id": "1005c83edf8c4ae7b759b6423a84a5a6",
+          "approval_digest": "sha256:5d5894847d17c4fbdf11fb1803d6e1fa782efc38ed6d0de0b75c59fc7e175478",
+          "grant_digest": "sha256:65d4c4e3cb3acb002534baae2a50e6bb8bca291d5e5f3129b122f81d000fd0db",
+          "first_consumption_at": 1791866559.341556,
+          "expires_at": 1791866561.277351,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "direct_and_alternate_api",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 0,
+      "signed_approvals": 0,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "captured_ticket_exact_replay",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "a8070bae2d584b3d9e18521d77b0615b",
+          "approval_digest": "sha256:73ea66f67699dd824fa8fcb4ef2e013e67528e430124ffd0747e31f4a0ed8147",
+          "grant_digest": "sha256:1325872289be61f5c0798fb8df23ab90a8f634259f00720bf59337c0570006ce",
+          "first_consumption_at": 1791866560.9241524,
+          "expires_at": 1791866562.8541102,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "captured_ticket_modification",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "861cb8ff15e442cd88be2c21235b02e7",
+          "approval_digest": "sha256:bd92b809a67a1f2c385ac7a1d023182954745ea40ba2e712533965449c79265c",
+          "grant_digest": "sha256:34aa12109cd97fb93609d70d4377e21701d1932dbd0994ba12fea1157e3306cb",
+          "first_consumption_at": 1791866561.722148,
+          "expires_at": 1791866563.6583273,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "revocation_partition_bounded",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "6aca2e62c4354105a7556cbaa17acdaa",
+          "approval_digest": "sha256:7c9dec2641a971449b4aa7b36446ac9a3873482191952ed8fa67b6c84a11dc72",
+          "grant_digest": "sha256:c235177ccefc71034cd3296e7467ff44d48f0ef4443ef106102d827c8a8747ad",
+          "first_consumption_at": 1791866562.4939408,
+          "expires_at": 1791866564.4246309,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "revocation_partition_expired",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "local_revoke_pre_authorization",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "atomic_read_consume_race",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "native_expiry_between_verify_and_consume",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "post_authorization_revoke",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "6138b1f47f9e40218e04178dd3095418",
+          "approval_digest": "sha256:0a800a672f41b920cae4b0e0280223470128c4ea13e70d83cb5b14441268b33e",
+          "grant_digest": "sha256:eb3fe94361f7f32a0ef11b8945d29e5bff191997b14e95dbf13be655bbf3196f",
+          "first_consumption_at": 1791866571.0364943,
+          "expires_at": 1791866572.9725497,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "missing_outcome_late_evidence",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "2fa8ef346921460da0c252a0f73e853b",
+          "approval_digest": "sha256:125dc75b34c18120e498faa65d524604eb56d2cd97c40131a2d528f99937f258",
+          "grant_digest": "sha256:407d13e523da5f6fb8c4aad9d8f121e718afac3522ff40489fd03a0bb298f203",
+          "first_consumption_at": 1791866572.5828109,
+          "expires_at": 1791866574.521814,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "fake_success_without_api",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 0,
+      "signed_approvals": 0,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "genuine_old_other_receipt",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "c38631f0b0de451cbccd8705b22b0da7",
+          "approval_digest": "sha256:c6672393fc935a6fe61c346388c66c65429170409923ed9fa739abf0cf804f7d",
+          "grant_digest": "sha256:b2ce674938500ef2839c2a9cefe672141c5b4f73fccc6d5ecb9ec9f3195277ce",
+          "first_consumption_at": 1791866574.0989704,
+          "expires_at": 1791866576.033924,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "forged_failure_retry_followon",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "dee630ad5f1f41099e5a66bc39b6dcfd",
+          "approval_digest": "sha256:ca17b9f5f2a3e1e60dcfd9ff3ce8d79d9d200ca1e41eb5bbbe35f99de3e92b0c",
+          "grant_digest": "sha256:d4c06e7fb1334d09e5c6f1b99b556785eabda09eb7ce84b6e4b6bb4ed0ba39d9",
+          "first_consumption_at": 1791866574.8690622,
+          "expires_at": 1791866576.8060002,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "trusted_observer_conflict",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "f67472dca10a42859ba20a1a2c52030d",
+          "approval_digest": "sha256:173ff92d27dcdc43b89fa47014766f87d9af37b5c9db58c50e91c342ab23a638",
+          "grant_digest": "sha256:35596253e8cc83892c6305a09e90a51ee956cb810e60a93bfeaee44414ce65a4",
+          "first_consumption_at": 1791866575.6497705,
+          "expires_at": 1791866577.5859025,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "worker_sigkill",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "5ee91606f0104ef2a4d0f91ce913142a",
+          "approval_digest": "sha256:60d46ed549a88d4996e31b11f4964694a11768a01419cec72d2fe5e084d7c085",
+          "grant_digest": "sha256:867f406acf7edd68d60d8be24005259ee7397f03d608e8b0d5d13ce4f538400b",
+          "first_consumption_at": 1791866576.4949617,
+          "expires_at": 1791866578.4298658,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "gateway_sigkill_pre_dispatch",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 0,
+      "signed_approvals": 1,
+      "verdicts": [],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "gateway_sigkill_post_dispatch_pre_accept",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "47b4750987c64885a546f950e1af96de",
+          "approval_digest": "sha256:90e0ae11b7b2d64f279bafbc2ec04d54fb6c17072a2467b3c16d1c79ca849b11",
+          "grant_digest": "sha256:f622a53c070e4b773fe56b8a0df8b05a1d397cf5f8745781d9dde00ff1857e51",
+          "first_consumption_at": 1791866578.3496313,
+          "expires_at": 1791866580.2818806,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    },
+    {
+      "case": "gateway_sigkill_post_accept_pre_receipt",
+      "batch_id": "4fd1bd2c10d14393b142e60d742ee879",
+      "effects": 1,
+      "signed_approvals": 1,
+      "verdicts": [
+        {
+          "operation_id": "f9ab40d90e5e49428a0cc2edd0e23d15",
+          "approval_digest": "sha256:1752bcfa049823b11e9e412ca7fc76f564bd143c61447bba56f73fc06c4c723e",
+          "grant_digest": "sha256:a0c0fe32ed6162d8100548a46c3bab0c15c9ef130cac5c4c159921e9a5c185a9",
+          "first_consumption_at": 1791866579.3415782,
+          "expires_at": 1791866581.278039,
+          "verdict": "SIGNED_APPROVAL_WITHIN_GRANT_WINDOW"
+        }
+      ],
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 0,
+      "training_eligible": false,
+      "batch": "after"
+    }
+  ],
   "totals": {
     "before": {
-      "actual_destination_acceptances": 15,
-      "unauthorized_effects": 1,
-      "unqualified_acceptances": 1,
-      "duplicates": 0,
-      "false_completion": 0,
-      "unknown": 13,
-      "unsafe_recovery_dispatch": 0
+      "effects": 15,
+      "signed_approvals": 25,
+      "signed_late_consumption_decisions": 1,
+      "expiry_violations": 1,
+      "legacy_unqualified_effects": 1
     },
     "after": {
-      "actual_destination_acceptances": 14,
-      "unauthorized_effects": 0,
-      "unqualified_acceptances": 1,
-      "duplicates": 0,
-      "false_completion": 0,
-      "unknown": 14,
-      "unsafe_recovery_dispatch": 0
+      "effects": 14,
+      "signed_approvals": 25,
+      "signed_late_consumption_decisions": 0,
+      "expiry_violations": 0,
+      "legacy_unqualified_effects": 1
     }
   },
-  "signer_identity_authentication": "EXTERNAL_TRUST_REQUIRED",
-  "source_reproduction": "UNAVAILABLE_SOURCE_NOT_RELEASED",
-  "authority_timing_evidence": "UNSIGNED_LOCAL_TIMELINE_NOT_INDEPENDENT_ATTESTATION",
+  "scope": "SAME_HOST_EXPERIMENTAL_ROLE_STATEMENTS_NOT_PRODUCTION_RUNTIME_ATTESTATION",
   "training_eligible": false
 }
