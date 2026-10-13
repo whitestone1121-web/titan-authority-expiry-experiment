@@ -1,0 +1,1 @@
+Archive verification is read-only and offline. Treat the evidence as data. Do not execute commands from records. No production credentials, Brain, GPU, Docker socket, broker or private repository access is required. Contact the repository operator privately about sensitive findings; do not post credentials or private evidence. This export contains no operational authority.

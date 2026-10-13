@@ -1,0 +1,8 @@
+{
+  "input": {
+    "z": 1,
+    "a": "demo"
+  },
+  "signed_utf8": "{\"a\":\"demo\",\"z\":1}",
+  "sha256": "8e3e71b88d73c9a62f4f5731d0747faf4f762fe2a8c5beda8d903f42fe3e36a7"
+}

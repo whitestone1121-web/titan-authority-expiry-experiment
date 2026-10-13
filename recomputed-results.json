@@ -1,0 +1,825 @@
+{
+  "archive_integrity": "VERIFIED_AGAINST_USER_SUPPLIED_PIN",
+  "signatures_by_role_including_repeated_checks": {
+    "destination": 56,
+    "journal": 87,
+    "observer": 54,
+    "gateway": 29
+  },
+  "cases": {
+    "before": [
+      {
+        "case": "normal",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "legacy_self_asserted",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 1,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "UNKNOWN_EVIDENCE_GAP"
+        ]
+      },
+      {
+        "case": "unsigned",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "forged_capability",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "wrong_resource",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "wrong_parameters",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "wrong_actor",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "grant_replay",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "direct_and_alternate_api",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "captured_ticket_exact_replay",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "captured_ticket_modification",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "revocation_partition_bounded",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "revocation_partition_expired",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "local_revoke_pre_authorization",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "atomic_read_consume_race",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "native_expiry_between_verify_and_consume",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 1,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "UNAUTHORIZED"
+        ]
+      },
+      {
+        "case": "post_authorization_revoke",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "missing_outcome_late_evidence",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "fake_success_without_api",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "genuine_old_other_receipt",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "forged_failure_retry_followon",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "trusted_observer_conflict",
+        "reconciliation": "UNKNOWN_CONFLICT",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "worker_sigkill",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "gateway_sigkill_pre_dispatch",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "gateway_sigkill_post_dispatch_pre_accept",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "gateway_sigkill_post_accept_pre_receipt",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      }
+    ],
+    "after": [
+      {
+        "case": "normal",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "legacy_self_asserted",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 1,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "UNKNOWN_EVIDENCE_GAP"
+        ]
+      },
+      {
+        "case": "unsigned",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "forged_capability",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "wrong_resource",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "wrong_parameters",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "wrong_actor",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "grant_replay",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "direct_and_alternate_api",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "captured_ticket_exact_replay",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "captured_ticket_modification",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "revocation_partition_bounded",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "revocation_partition_expired",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "local_revoke_pre_authorization",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "atomic_read_consume_race",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "native_expiry_between_verify_and_consume",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "post_authorization_revoke",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "missing_outcome_late_evidence",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "fake_success_without_api",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "genuine_old_other_receipt",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "forged_failure_retry_followon",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "trusted_observer_conflict",
+        "reconciliation": "UNKNOWN_CONFLICT",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "worker_sigkill",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "gateway_sigkill_pre_dispatch",
+        "reconciliation": "UNKNOWN",
+        "scores": {
+          "actual_destination_acceptances": 0,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 1,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": []
+      },
+      {
+        "case": "gateway_sigkill_post_dispatch_pre_accept",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      },
+      {
+        "case": "gateway_sigkill_post_accept_pre_receipt",
+        "reconciliation": "CONFIRMED_EXPERIMENTAL_ADAPTER_ONLY",
+        "scores": {
+          "actual_destination_acceptances": 1,
+          "unauthorized_effects": 0,
+          "unqualified_acceptances": 0,
+          "duplicates": 0,
+          "false_completion": 0,
+          "unknown": 0,
+          "unsafe_recovery_dispatch": 0
+        },
+        "verdicts": [
+          "AUTHORIZED_BOUNDED_ADAPTER"
+        ]
+      }
+    ]
+  },
+  "totals": {
+    "before": {
+      "actual_destination_acceptances": 15,
+      "unauthorized_effects": 1,
+      "unqualified_acceptances": 1,
+      "duplicates": 0,
+      "false_completion": 0,
+      "unknown": 13,
+      "unsafe_recovery_dispatch": 0
+    },
+    "after": {
+      "actual_destination_acceptances": 14,
+      "unauthorized_effects": 0,
+      "unqualified_acceptances": 1,
+      "duplicates": 0,
+      "false_completion": 0,
+      "unknown": 14,
+      "unsafe_recovery_dispatch": 0
+    }
+  },
+  "signer_identity_authentication": "EXTERNAL_TRUST_REQUIRED",
+  "source_reproduction": "UNAVAILABLE_SOURCE_NOT_RELEASED",
+  "authority_timing_evidence": "UNSIGNED_LOCAL_TIMELINE_NOT_INDEPENDENT_ATTESTATION",
+  "training_eligible": false
+}

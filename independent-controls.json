@@ -1,0 +1,72 @@
+{
+  "verifier_sha256": "8f935389d1f7dd30f34ca772beb0fa6ece1821102b6e0e677196b632c5786604",
+  "externally_required_manifest_pin": "0e1c927eb7214e36fe9b6883a5ca64a1044e5febb7c07e27f58dfc54eeb8c201",
+  "clean_execution": [
+    "python3",
+    "-I",
+    "-B",
+    "verify_public_evidence.py",
+    "--root",
+    ".",
+    "--manifest-sha256",
+    "0e1c927eb7214e36fe9b6883a5ca64a1044e5febb7c07e27f58dfc54eeb8c201"
+  ],
+  "negative_controls": [
+    {
+      "control": "alteredpayload",
+      "rejected": true,
+      "error": "InvalidSignature",
+      "message": "",
+      "layer": "semantic/signature direct API; intentionally bypassed archive integrity"
+    },
+    {
+      "control": "unexpectedkey",
+      "rejected": true,
+      "error": "AssertionError",
+      "message": "unexpected role key",
+      "layer": "semantic/signature direct API; intentionally bypassed archive integrity"
+    },
+    {
+      "control": "missingrequiredrecord",
+      "rejected": true,
+      "error": "AssertionError",
+      "message": "missing observer record",
+      "layer": "semantic/signature direct API; intentionally bypassed archive integrity"
+    },
+    {
+      "control": "validsigned_wrongoperation",
+      "rejected": true,
+      "error": "AssertionError",
+      "message": "wrong-operation destination receipt",
+      "layer": "semantic/signature direct API; intentionally bypassed archive integrity"
+    },
+    {
+      "control": "wrongrolesignature",
+      "rejected": true,
+      "error": "InvalidSignature",
+      "message": "",
+      "layer": "semantic/signature direct API; intentionally bypassed archive integrity"
+    },
+    {
+      "control": "editedsummary",
+      "rejected": true,
+      "error": "AssertionError",
+      "message": "edited aggregate conclusion",
+      "layer": "semantic/signature direct API; intentionally bypassed archive integrity"
+    },
+    {
+      "control": "altered_archive_bytes",
+      "rejected": true,
+      "message": "altered evidence file"
+    },
+    {
+      "control": "missing_archive_file",
+      "rejected": true,
+      "message": "missing or unexpected case file"
+    }
+  ],
+  "no_titan_imports": true,
+  "source_reproduction": "UNAVAILABLE_SOURCE_NOT_RELEASED",
+  "actor": "/root/routing_independent_audit",
+  "actual_child": "01a12be8-938f-72c0-882f-189cdf68fc51"
+}
